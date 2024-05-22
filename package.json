@@ -1,12 +1,15 @@
 {
   "name": "car-rental",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": "Admir Ćejvanović",
+  "description": "Car rental app",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "start": "vite",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier ./src --write",
+    "build": "tsc && eslint ./src --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0 && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,7 +18,9 @@
     "@emotion/styled": "^11.11.5",
     "framer-motion": "^11.2.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^4.0.13",
+    "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
