@@ -7,6 +7,16 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
+    "paths": {
+      "router/*": ["src/router/*"],
+      "components/*": ["src/components/*"],
+      "pages/*": ["src/pages/*"],
+      "store/*": ["src/store/*"],
+      "hooks/*": ["src/hooks/*"],
+      "layout/*": ["src/layout/*"],
+      "assets/*": ["src/assets/*"],
+      "features/*": ["src/features/*"]
+    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
