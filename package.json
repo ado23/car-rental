@@ -7,13 +7,13 @@
   "description": "Car rental app",
   "scripts": {
     "start": "vite",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
     "format": "prettier ./src --write",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "build": "tsc && eslint ./src --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0 && vite build",
-    "preview": "vite preview"
+    "update-sprite": "svg-sprite -s --symbol-dest src --symbol-sprite assets/icons/sprite.svg src/assets/icons/svg/*/*.svg"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
@@ -39,6 +39,7 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "prettier": "3.2.5",
+    "svg-sprite": "^2.0.4",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-tsconfig-paths": "^4.3.2"

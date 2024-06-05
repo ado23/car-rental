@@ -8,7 +8,7 @@ type NavItem = Pick<IRoute, "name" | "path">;
 const MobileNavItem = ({ name, path }: NavItem) => (
   <Stack spacing={4}>
     <NavLink to={path}>
-      <Flex py={2} align={"center"} justify={"space-between"} _hover={{ textDecoration: "none" }}>
+      <Flex py={2} align="center" justify="space-between" _hover={{ textDecoration: "none" }}>
         <Text fontWeight={600} color={useColorModeValue("gray.600", "gray.200")}>
           {name}
         </Text>

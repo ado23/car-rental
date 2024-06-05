@@ -1,11 +1,7 @@
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import {
-  Image,
-  Box,
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
   Collapse,
   useColorModeValue,
@@ -14,26 +10,28 @@ import {
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 
-import logo from "assets/img/logo.png";
+import { Icon } from "components/index";
 import { ColorMode } from "features/index";
 import ROUTES from "router/routes";
 import MobileNav from "src/layout/navbar/mobile/MobileNav";
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
+  const isMobile = useBreakpointValue({ base: true, sm: true, md: false });
 
   return (
-    <Box position="sticky" top="0" backdropFilter="blur(20px)" borderColor="transparent">
+    <header>
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
-        color={useColorModeValue("gray.600", "white")}
-        minH="60px"
+        minH="80px"
+        align="center"
         py={{ base: 2 }}
         px={{ base: 4 }}
-        borderBottom={1}
-        borderStyle="solid"
-        borderColor={useColorModeValue("gray.200", "gray.900")}
-        align="center"
+        overflowX="auto"
+        borderBottom="1px solid"
+        backdropFilter="blur(20px)"
+        color={useColorModeValue("gray.600", "white")}
+        borderColor={useColorModeValue("gray.200", "gray.700")}
+        bg={useColorModeValue("whiteAlpha.300", "blackAlpha.400")}
       >
         <Flex
           ml={{ base: -2 }}
@@ -44,36 +42,33 @@ const Navbar = () => {
             variant="ghost"
             onClick={onToggle}
             aria-label="Toggle Navigation"
-            icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
+            icon={
+              <Icon name={isOpen ? "close" : "menu"} fill={useColorModeValue("black", "white")} />
+            }
           />
         </Flex>
 
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Image
-            src={logo}
-            alt="Logo"
-            width="5rem"
-            height="4rem"
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-          />
-
-          <Flex display={{ base: "none", md: "flex" }} ml={10} align="center">
+        <Flex
+          flex={{ base: 1 }}
+          justifyContent={{ base: "center", md: "center" }}
+          alignItems="center"
+        >
+          <Flex justifySelf="flex-start" alignItems="center">
+            <Icon name={isMobile ? "logo" : "app-logo"} height="3rem" width="11rem" />
+          </Flex>
+          <Flex display={{ base: "none", md: "flex" }} justifyContent="center" flex={1}>
             <DesktopNav />
           </Flex>
         </Flex>
 
-        <Stack flex={{ base: 1, md: 0 }} justify="flex-end" direction="row" spacing={6}>
-          <Button fontSize="sm" fontWeight={400} variant="link">
-            Sign In
-          </Button>
-          <Button
-            fontSize="sm"
-            fontWeight={600}
-            colorScheme="blue"
-            display={{ base: "none", md: "inline-flex" }}
-          >
-            Sign Up
-          </Button>
+        <Stack flex={{ base: 1, md: 0 }} justify="flex-end" direction="row">
+          <IconButton
+            aria-label="Sign Up"
+            icon={<Icon name="user-rounded" fill={useColorModeValue("black", "white")} />}
+            borderRadius="full"
+            variant="ghost"
+            size="md"
+          />
           <ColorMode />
         </Stack>
       </Flex>
@@ -81,22 +76,24 @@ const Navbar = () => {
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
-    </Box>
+    </header>
   );
 };
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
+  const linkColor = useColorModeValue("gray.800", "gray.200");
+  const linkHoverColor = useColorModeValue("blue.500", "cyan.500");
 
   return (
     <Stack direction="row" spacing={4}>
       {ROUTES.map(({ name, path }) => (
         <NavLink key={name} to={path}>
           <Text
-            pr="12px"
-            fontSize="sm"
+            as="span"
+            px={2}
+            fontSize="lg"
             fontWeight={500}
+            whiteSpace={"nowrap"}
             color={linkColor}
             _hover={{ textDecoration: "none", color: linkHoverColor }}
           >

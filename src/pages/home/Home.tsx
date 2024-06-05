@@ -1,9 +1,7 @@
+import Landing from "pages/home/components/Landing";
+
 const Home = () => {
-  return (
-    <div>
-      <p>Home PAGE</p>
-    </div>
-  );
+  return <Landing />;
 };
 
 export default Home;

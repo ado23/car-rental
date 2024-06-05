@@ -15,7 +15,7 @@ const App = () => (
     templateRows="auto 1fr"
     templateColumns="1fr 2fr 1fr"
   >
-    <GridItem area="navbar" position="sticky" top={0}>
+    <GridItem area="navbar" position="sticky" top={0} zIndex={99}>
       <Navbar />
     </GridItem>
     <GridItem area="main">

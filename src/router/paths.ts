@@ -1,9 +1,8 @@
 export enum Paths {
   HOME = "home",
   ABOUT = "about",
-  VEHICLE_MODELS = "vehicle-models",
+  VEHICLES = "vehicles",
   TESTIMONIALS = "testimonials",
-  OUR_TEAM = "our-team",
   CONTACT = "contact",
   NOT_FOUND = "*"
 }

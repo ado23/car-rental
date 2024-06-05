@@ -15,7 +15,8 @@
       "hooks/*": ["src/hooks/*"],
       "layout/*": ["src/layout/*"],
       "assets/*": ["src/assets/*"],
-      "features/*": ["src/features/*"]
+      "features/*": ["src/features/*"],
+      "data/*": ["src/data/*"]
     },
 
     /* Bundler mode */
