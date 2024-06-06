@@ -31,7 +31,7 @@ const Navbar = () => {
         backdropFilter="blur(20px)"
         color={useColorModeValue("gray.600", "white")}
         borderColor={useColorModeValue("gray.200", "gray.700")}
-        bg={useColorModeValue("whiteAlpha.300", "blackAlpha.400")}
+        bg={useColorModeValue("gray.50", "blackAlpha.400")}
       >
         <Flex
           ml={{ base: -2 }}

@@ -1,65 +1,62 @@
-"use client";
+import { Box, Button, Flex, Heading, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 
-import { Button, Flex, Heading, Image, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
+import car from "assets/img/arteon.png";
+import patternTransparent from "assets/img/pattern-transparent.png";
 
-export default function Landing() {
-  return (
-    <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
-      <Flex p={8} flex={1} align={"center"} justify={"center"}>
-        <Stack spacing={6} w={"full"} maxW={"lg"}>
-          <Text color={"blue.400"} as={"span"}>
-            Design Projects
-          </Text>{" "}
-          <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
-            <Text
-              as={"span"}
-              position={"relative"}
-              _after={{
-                content: "''",
-                width: "full",
-                height: useBreakpointValue({ base: "20%", md: "30%" }),
-                position: "absolute",
-                bottom: 1,
-                left: 0,
-                bg: "blue.400",
-                zIndex: -1
-              }}
-            >
-              Freelance sfdsf ojdfojidjfoidjfoidj foidj fosjf
-            </Text>
-            <br />{" "}
-            <Text color={"blue.400"} as={"span"}>
-              Design Projects
-            </Text>{" "}
-          </Heading>
-          <Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
-            The project board is an exclusive resource for contract work. It&apos;s perfect for
-            freelancers, agencies, and moonlighters.
+const Landing = () => (
+  <Flex
+    justify={{ base: "center", sm: "center", md: "center", lg: "end" }}
+    height="80vh"
+    backgroundSize="cover"
+    backgroundRepeat="no-repeat"
+    backgroundPosition="center center"
+    backgroundImage={patternTransparent}
+    _after={{
+      content: '""',
+      objectFit: "cover",
+      position: "absolute",
+      top: -5,
+      right: 0,
+      bottom: 0,
+      left: -750,
+      zIndex: 1,
+      backgroundImage: car,
+      backgroundRepeat: "no-repeat"
+    }}
+  >
+    <Flex
+      px="10px"
+      align="center"
+      justify={{ base: "center", sm: "center", md: "center", lg: "end" }}
+    >
+      <Stack
+        w="full"
+        p="10px"
+        maxW="2xl"
+        zIndex={2}
+        spacing={5}
+        borderRadius="10px"
+        backdropFilter="blur(10px)"
+        background={useColorModeValue("whiteAlpha.700", "blackAlpha.700")}
+      >
+        <Heading fontSize={{ base: "5xl", md: "6xl", lg: "7xl" }}>
+          <Text>Discover the world on wheels with our car rental service</Text>
+        </Heading>
+        <Box>
+          <Text fontSize={{ base: "md", lg: "lg" }} borderRadius="5px" p={2}>
+            Choose from a wide range of cars that fit your style and budget. Experience the freedom
+            of open roads with our reliable and efficient car rental service.
           </Text>
-          <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-            <Button
-              rounded={"full"}
-              bg={"blue.400"}
-              color={"white"}
-              _hover={{
-                bg: "blue.500"
-              }}
-            >
-              Create Project
-            </Button>
-            <Button rounded={"full"}>How It Works</Button>
-          </Stack>
+        </Box>
+        <Stack direction={{ base: "column", md: "row" }} spacing={4}>
+          <Button colorScheme="blue">Explore now</Button>
+          <Button colorScheme="blue" variant="outline">
+            Watch video
+          </Button>
         </Stack>
-      </Flex>
-      <Flex flex={1}>
-        <Image
-          alt={"Login Image"}
-          objectFit={"cover"}
-          src={
-            "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-          }
-        />
-      </Flex>
-    </Stack>
-  );
-}
+      </Stack>
+    </Flex>
+  </Flex>
+);
+
+export default Landing;
