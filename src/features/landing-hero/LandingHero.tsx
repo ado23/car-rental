@@ -6,7 +6,7 @@ import patternTransparent from "assets/img/pattern-transparent.png";
 const Landing = () => (
   <Flex
     justify={{ base: "center", sm: "center", md: "center", lg: "end" }}
-    height="80vh"
+    height="100vh"
     backgroundSize="cover"
     backgroundRepeat="no-repeat"
     backgroundPosition="center center"
@@ -40,7 +40,17 @@ const Landing = () => (
         background={useColorModeValue("whiteAlpha.700", "blackAlpha.700")}
       >
         <Heading fontSize={{ base: "5xl", md: "6xl", lg: "7xl" }}>
-          <Text>Discover the world on wheels with our car rental service</Text>
+          <Text>
+            <Text as="b" color="blue.500">
+              Discover {""}
+            </Text>
+            the world on wheels with our
+            <Text as="b" color="blue.500">
+              {" "}
+              car rental {""}
+            </Text>
+            service.
+          </Text>
         </Heading>
         <Box>
           <Text fontSize={{ base: "md", lg: "lg" }} borderRadius="5px" p={2}>
@@ -50,9 +60,7 @@ const Landing = () => (
         </Box>
         <Stack direction={{ base: "column", md: "row" }} spacing={4}>
           <Button colorScheme="blue">Explore now</Button>
-          <Button colorScheme="blue" variant="outline">
-            Watch video
-          </Button>
+          <Button colorScheme="teal">See all cars</Button>
         </Stack>
       </Stack>
     </Flex>

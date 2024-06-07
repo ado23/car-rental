@@ -1,8 +1,9 @@
-import Landing from "pages/home/components/Landing";
+import { LandingHero, Rent } from "features/index";
 
 const Home = () => (
   <section id="landing">
-    <Landing />;
+    <LandingHero />
+    <Rent />
   </section>
 );
 
