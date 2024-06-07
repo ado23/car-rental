@@ -15,7 +15,7 @@ import pattern from "assets/img/patternImage.png";
 import { Icon } from "components/index";
 
 const Rent = () => (
-  <Box bg={useColorModeValue("gray.100", "gray.900")} py={10}>
+  <Box py={10}>
     <Container maxW="7xl">
       <Box
         pos="relative"

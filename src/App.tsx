@@ -5,7 +5,7 @@ import AppRoutes from "router/Router";
 
 const App = () => (
   <Grid
-    h="100vh"
+    h="100%"
     w="100%"
     templateAreas={`
           "navbar navbar navbar"

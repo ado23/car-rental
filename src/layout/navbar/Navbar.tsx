@@ -20,13 +20,12 @@ const Navbar = () => {
   const isMobile = useBreakpointValue({ base: true, sm: true, md: false });
 
   return (
-    <header>
+    <header style={{ zIndex: 99, position: "relative" }}>
       <Flex
         minH="80px"
         align="center"
         py={{ base: 2 }}
         px={{ base: 4 }}
-        overflowX="auto"
         borderBottom="1px solid"
         backdropFilter="blur(20px)"
         color={useColorModeValue("gray.600", "white")}
