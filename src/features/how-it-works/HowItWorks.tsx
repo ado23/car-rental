@@ -4,8 +4,8 @@ import { Icon } from "components/index";
 
 const HowItWorks = () => (
   <Box py={10}>
-    <Container maxW="7xl">
-      <Box marginX="auto" py={{ base: "3rem", md: "4rem" }}>
+    <Container maxW="7xl" px={24}>
+      <Box marginX="auto" py={{ base: "2rem", md: "4rem" }}>
         <Heading fontSize="5xl" textAlign="center" mb={{ base: "5", md: "2" }} pb={4}>
           How it works ?
         </Heading>
@@ -15,14 +15,13 @@ const HowItWorks = () => (
           alignItems="start"
           justifyContent="between"
           flexDirection={{ base: "column", md: "row" }}
-          my={{ base: "1.5rem", md: "2.5rem" }}
+          my={{ base: "1rem", md: "2.5rem" }}
           pb={8}
           gap={10}
         >
           <Box
             w={{ base: "100%", md: 1 / 3 }}
-            p={{ md: "1rem" }}
-            mb={{ base: "6", md: "0" }}
+            p="1rem"
             border="1px solid"
             borderRadius="lg"
             alignSelf="stretch"
@@ -65,8 +64,7 @@ const HowItWorks = () => (
 
           <Box
             w={{ base: "100%", md: 1 / 3 }}
-            p={{ md: "1rem" }}
-            mb={{ base: "6", md: "0" }}
+            p="1rem"
             border="1px solid"
             borderRadius="lg"
             alignSelf="stretch"
@@ -109,8 +107,7 @@ const HowItWorks = () => (
 
           <Box
             w={{ base: "100%", md: 1 / 3 }}
-            p={{ md: "1rem" }}
-            mb={{ base: "6", md: "0" }}
+            p="1rem"
             border="1px solid"
             borderRadius="lg"
             alignSelf="stretch"

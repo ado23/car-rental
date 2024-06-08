@@ -48,7 +48,7 @@ const Rent = () => (
           objectFit="fill"
         />
 
-        <Flex zIndex={1} direction="column" gap={5} textAlign="left">
+        <Flex zIndex={1} direction="column" gap={5} textAlign={{ base: "center", md: "left" }}>
           <Heading fontSize="5xl" fontWeight="bold" mb={5}>
             Rent a vehicle with ease
           </Heading>
