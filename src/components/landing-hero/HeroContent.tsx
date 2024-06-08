@@ -2,8 +2,10 @@ import { Box, Button, Flex, Heading, Stack, Text, useColorModeValue } from "@cha
 
 const Actions = () => (
   <Stack direction={{ base: "column", sm: "column", md: "row", lg: "row" }} spacing={4}>
-    <Button colorScheme="blue">Explore now</Button>
-    <Button colorScheme="teal">See all cars</Button>
+    <Button colorScheme="dark">Explore now</Button>
+    <Button colorScheme="blue" variant="outline">
+      See all cars
+    </Button>
   </Stack>
 );
 

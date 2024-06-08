@@ -2,7 +2,7 @@ import { LandingHero } from "components/index";
 import { HowItWorks, Rent, WhyChooseUs } from "features/index";
 
 const Home = () => (
-  <section id="landing">
+  <section id="home">
     <LandingHero />
     <Rent />
     <HowItWorks />
