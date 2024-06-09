@@ -82,7 +82,7 @@ const HowItWorks = () => (
                 background={useColorModeValue("white", "gray.800")}
               >
                 <Icon
-                  name="calendar-with-time"
+                  name="calendar"
                   width="3rem"
                   height="3rem"
                   color={useColorModeValue("black", "white")}

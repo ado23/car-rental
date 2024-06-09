@@ -22,7 +22,7 @@ export enum IconNames {
   Car = "car",
   HomePin = "home-pin",
   DropOffPin = "drop-off-pin",
-  CalendarTime = "calendar-with-time",
+  Calendar = "calendar",
 
   /* SOCIAL */
   Twitter = "twitter",

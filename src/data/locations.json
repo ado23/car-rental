@@ -1,0 +1,44 @@
+{
+  "locations": [
+    {
+      "id": "fdf20911-265b-4185-b6d1-5d02b22206ea",
+      "name": "Madrid"
+    },
+    {
+      "id": "38dea71a-f514-4784-bfb1-59bfd4be449f",
+      "name": "Valencia"
+    },
+    {
+      "id": "4bfcb26b-312b-4ca3-8d36-ad73c7030cbf",
+      "name": "Seville"
+    },
+    {
+      "id": "e7fa713d-cca8-429a-b2a7-f43a857adb1b",
+      "name": "Zaragoza"
+    },
+    {
+      "id": "eaf6ed85-cc56-4233-953d-b4b5c6c57db4",
+      "name": "Málaga"
+    },
+    {
+      "id": "83ff0140-4d61-4f3c-8045-d8b0e2a58f71",
+      "name": "Murcia"
+    },
+    {
+      "id": "d399f730-6560-4889-8ac8-ed2c90856d16",
+      "name": "Palma"
+    },
+    {
+      "id": "baa99940-9da8-4271-9ec6-a6dbf73a48ac",
+      "name": "Gijón"
+    },
+    {
+      "id": "b292e077-1d18-47ca-a2f4-03f451d325e6",
+      "name": "Cordoba"
+    },
+    {
+      "id": "e3b216bd-c557-4827-a495-519a1a06d71f",
+      "name": "Granada"
+    }
+  ]
+}

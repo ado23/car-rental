@@ -19,7 +19,7 @@ const HeroContent = () => (
     backdropFilter="blur(10px)"
     background={useColorModeValue("whiteAlpha.300", "blackAlpha.300")}
   >
-    <Heading fontSize={{ base: "4xl", sm: "4xl", md: "5xl", lg: "6xl" }}>
+    <Heading fontSize={{ base: "3xl", sm: "4xl", md: "5xl", lg: "6xl" }}>
       <Text>
         <Text as="b" color="blue.500">
           Discover {""}

@@ -1,0 +1,40 @@
+{
+  "vehicleTypes": [
+    {
+      "id": "d865c02b-b710-4b8a-8d47-4bfa35f12619",
+      "name": "Convertible"
+    },
+    {
+      "id": "82971d5b-9ff8-4fbf-b187-91bff38a5664",
+      "name": "Coupe"
+    },
+    {
+      "id": "4361dc32-d7c5-4f4a-85e3-c31fe3868a0f",
+      "name": "Hatchback"
+    },
+    {
+      "id": "032f28c6-68e7-4ffa-945a-f519add4e487",
+      "name": "SUV"
+    },
+    {
+      "id": "2e1cbd57-8131-41c2-9a94-7e7e9be5b839",
+      "name": "Sedan"
+    },
+    {
+      "id": "d4551644-8d60-43ca-b2aa-ca28ec0e6dea",
+      "name": "Crossover"
+    },
+    {
+      "id": "2008f3ac-fb52-47b2-995f-7a103209bd23",
+      "name": "Sports Car"
+    },
+    {
+      "id": "aff0f2db-6e85-471d-826e-7e8338476271",
+      "name": "Wagon"
+    },
+    {
+      "id": "f4111767-1518-4900-913c-09cab7e3a49e",
+      "name": "Luxury Car"
+    }
+  ]
+}
