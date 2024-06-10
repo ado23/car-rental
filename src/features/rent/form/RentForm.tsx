@@ -26,28 +26,6 @@ const RentForm = () => {
       >
         <Box width="100%">
           <Select
-            options={vehicleTypes}
-            placeholder="e.g. (Sedan)"
-            label="Vehicle Type"
-            icon="car"
-            isClearable
-            isSearchable
-          />
-        </Box>
-
-        <Box width="100%">
-          <Select
-            options={vehicles}
-            placeholder="e.g. (Arteon)"
-            label="Vehicle"
-            icon="car"
-            isClearable
-            isSearchable
-          />
-        </Box>
-
-        <Box width="100%">
-          <Select
             options={locations}
             placeholder="e.g. (Madrid)"
             isClearable
@@ -65,6 +43,28 @@ const RentForm = () => {
             isSearchable
             label="Drop-Off Location"
             icon="drop-off-pin"
+          />
+        </Box>
+
+        <Box width="100%">
+          <Select
+            options={vehicleTypes}
+            placeholder="e.g. (Sedan)"
+            label="Vehicle Type"
+            icon="car"
+            isClearable
+            isSearchable
+          />
+        </Box>
+
+        <Box width="100%">
+          <Select
+            options={vehicles}
+            placeholder="e.g. (Arteon)"
+            label="Vehicle"
+            icon="car"
+            isClearable
+            isSearchable
           />
         </Box>
       </Flex>
