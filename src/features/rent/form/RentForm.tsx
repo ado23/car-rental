@@ -1,6 +1,6 @@
-import { Box, Button, FormLabel, Input, Flex, Heading } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading } from "@chakra-ui/react";
 
-import { Icon, Select } from "components/index";
+import { DatePicker, Select } from "components/index";
 import useGetData from "features/rent/hooks/useGetData";
 
 const RentForm = () => {
@@ -76,21 +76,11 @@ const RentForm = () => {
         direction={{ base: "column", sm: "column", md: "column", lg: "row" }}
       >
         <Box width="100%">
-          <Flex direction="row" gap={3}>
-            <Icon name="calendar" />
-            <FormLabel>Select Pick-up Date</FormLabel>
-          </Flex>
-
-          <Input type="date" placeholder="Select option" />
+          <DatePicker label="Pick-Up Date" onChange={() => void 0} />
         </Box>
 
         <Box width="100%">
-          <Flex direction="row" gap={3}>
-            <Icon name="calendar" />
-            <FormLabel>Select Drop-off Date</FormLabel>
-          </Flex>
-
-          <Input type="date" placeholder="Select option" />
+          <DatePicker label="Drop-Off Date" onChange={() => void 0} />
         </Box>
       </Flex>
 

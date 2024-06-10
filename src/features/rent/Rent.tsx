@@ -5,7 +5,7 @@ import RentForm from "features/rent/form/RentForm";
 
 const Rent = () => (
   <section id="rent-vehicle-box">
-    <Container maxW="8xl">
+    <Container maxW="7xl" pb={{ base: "4rem", md: "10rem" }}>
       <Box
         pos="relative"
         rounded="lg"

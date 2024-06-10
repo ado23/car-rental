@@ -16,6 +16,7 @@
       "layout/*": ["src/layout/*"],
       "assets/*": ["src/assets/*"],
       "features/*": ["src/features/*"],
+      "theme/*": ["src/theme/*"],
       "data/*": ["src/data/*"]
     },
 
